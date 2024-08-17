@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MY web page</title>
+        </head>
+        <body>
+        <h1>Find Greater!</h1>
+    <hr>
+    <input type="number" id="num1"placeholder="Enter your number"/>
+    <br></br>
+    <input type="number" id="num2" placeholder="Enter your number"/>
+    <br></br>
+   <button onclick="f1()">sumbit</button>
+   <p id="para"></p>
+    </body>
+    <script>
+        function f1(){
+            var a = document.getElementById("num1");
+            var b = document.getElementById("num2");
+            var p = document.getElementById("para");
+            var d = parseFloat(a.value);
+            var e = parseFloat(b.value);
+            if (d > e) {
+                p.innerHTML = d + " is greater than " + e;
+            }
+            else {
+                p.innerHTML = e + " is greater than " + d;
+            }
+        }
+    </script>
+</html>

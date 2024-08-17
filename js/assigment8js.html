@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web page</title>
+    </head>
+    <h1>
+        Find Prime Number
+    </h1>
+    <body>
+        <input type="number"id="num"placeholder="Enter prime number"/>
+        <button onclick="f1()">find</button>
+        <p id="para"></p>
+    </body>
+    <script>
+        function f1(){
+            var a=parseInt(document.getElementById("num").value);
+            var p=document.getElementById("para");
+            if(a<=0){
+                p.innerHTML="Invalid number";
+            }
+            else{
+                var abc = 0;
+                for (var i = 2; i <= a/ 2; i++) {
+                    if (a % i == 0) {
+                        abc++;
+                    }
+                }
+                if (abc == 0) {
+                    p.innerHTML = a + " is Prime Number";
+                }
+                else {
+                    p.innerHTML = a+ " is not Prime Number";
+            }
+        }
+    }
+
+    </script>
+</html>

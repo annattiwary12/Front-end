@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MY web page</title>
+        <style>
+        section{
+         position: absolute;
+        background-color: wheat;
+        height:100%;
+        width: 100%;
+        margin:-10px;
+        border: 3px solid black;
+      }
+         hr{
+        color: blueviolet;
+        width: 100%;
+        border: 1px solid red;
+      } 
+       header h1{
+        margin-left: 50px;
+
+      }
+       section>header>button{
+        height: 30px;
+        float: right;
+        margin-top: -45px;
+        margin-right: 45px;
+      }
+      #b2{
+        height: 70px;
+        float: right;
+        margin-top: -86px;
+        margin-right: 35px;
+      }
+       button{
+        background-color: aquamarine;
+        border: 2px solid brown;
+        border-radius: 4px;
+      }
+      div>button{
+        margin-left: 45px;
+      }
+      #abc{
+        margin-left: 34px;
+      }
+      footer{
+        text-align: center;
+      }
+      footer button{
+        margin-top: 20px;
+      }
+        </style>
+    </head>
+    <body>
+        <section>
+        <header>
+            <h1 id="abc">This is India</h1>
+            <button onclick="a1()"> change</button>
+        <hr/>
+        </header>
+        <div>
+        <div>
+        <p id="bcd">This is button</p>
+        <button onclick="a2()">change</button>
+        </div>
+        <div id="b2">
+        <p id="efg">This is incapp.</p>
+        <button onclick="a2()">change</button>
+        </div>
+        <footer>
+        <button onclick="a3()">Alert Message!</button>
+        </footer>
+        <br><br/>
+    </section>
+    </body>
+    <script>
+        function a1(){
+            var a=document.getElementById("abc");
+            a.innerHTML="I love my india!";
+        }
+         function a2() {
+             var b= document.getElementById("bcd");
+            b.innerHTML = "hellow everyone!";
+             var c = document.getElementById("efg");
+             c.innerHTML = "welcome to web design!";
+        }
+           function a3() {
+             alert("hello from Anant tiwary")
+           }
+    </script>
+</html>

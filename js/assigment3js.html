@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MY web page</title>
+</head>
+
+<body>
+    <h1>Square App!</h1>
+    <hr>
+    <input type="number" id="num1" placeholder="Enter your number" />
+    
+    <button onclick="f1()">sumbit</button>
+    <p id="para"></p>
+</body>
+<script>
+    function f1() {
+            var a = document.getElementById("num1");
+            var e = parseFloat(a.value);
+            var y=e*e;
+            document.getElementById("para").innerHTML=y;
+            
+    }
+</script>
+</html>

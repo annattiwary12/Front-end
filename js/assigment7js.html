@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web page</title>
+    </head>
+    <body>
+        <h1>
+            Factorial number!
+        </h1>
+        <input type="number"id="num"placeholder="Enter your number"/>
+        <button onclick="f1()">find</button>
+        <p id="para"></p>
+    </body>
+    <script>
+        function f1(){
+            var a= parseInt(document.getElementById("num").value);
+            var p=document.getElementById("para");
+            var data=1;
+            for(var i=1;i<=a;i++){
+                data*=i;
+            p.innerHTML=data;
+            }
+        }
+    </script>
+</html>

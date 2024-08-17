@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JQ Ex</title>
+    <script src="jquery-1.4.1.min.js"></script>
+</head>
+
+<body>
+    <h1>Welcome to my Page.</h1>
+    <hr />
+    <button id="b1">Click</button>
+    <div>
+        <h2>Hello INCAPP</h2>
+        <p>This is Rahul Chauhan.</p>
+    </div>
+    <p>kjfdg hdfkjghdfkj hdfkljg</p>
+</body>
+<script>
+    $(document).ready(
+        function () {
+            $("#b1").click(
+                function () {
+                    //$("div").slideToggle();
+                    $("div").slideToggle(1000);
+                }
+            );
+        }
+    );
+</script>
+
+</html>

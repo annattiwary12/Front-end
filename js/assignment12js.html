@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>web page</title>
+        <h1>
+            Find Polindrone Number
+        </h1>
+    </head>
+    <body>
+        <input type="number"id="num"placeholder="Enter your number"/>
+        <button onclick="f1()">Go</button>
+        <p id="para"></p>
+    </body>
+    <script>
+        function f1(){
+            var a=document.getElementById("para");
+            var b=parseFloat(document.getElementById("num").value);
+            var data="";
+            var t = b;
+            while (b != 0) {
+                var r = b% 10;
+                data += r;
+                b = parseInt(b / 10);
+            }
+            if (t == data) {
+                a.innerHTML = "Number is Polindrome."
+            } else {
+                a.innerHTML = "Number is not Polindrome.";
+            }
+
+        }
+
+        
+    </script>
+
+</html>
